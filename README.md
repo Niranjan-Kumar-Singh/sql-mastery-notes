@@ -1,9 +1,11 @@
 <div align="center">
 
-# 🗄️ The Complete SQL Mastery Notes
+![SQL Mastery Banner](./assets/banner.png)
 
-### A comprehensive, beginner-friendly, professional-quality guide to SQL & MySQL
-*From absolute zero to advanced analytics — one phase at a time.*
+# 🏁 THE COMPLETE SQL MASTERY NOTES
+
+### *The definitive, 10/10 professional-grade guide to SQL and MySQL*
+**80+ Topics | 16 Structured Phases | From Zero to Advanced Analytics**
 
 <br/>
 
@@ -13,248 +15,160 @@
 ![Topics](https://img.shields.io/badge/Topics-80%2B-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
+<br/>
+
+---
+
+### "Don't just write queries. Master the engine."
+
+> *These notes were built to fill the gap between 'online tutorials' and 'real-world engineering'. We don't just teach you how to write a SELECT statement; we teach you how the database optimizer parses it, caches it, and retrieves it from the disk.*
+
+---
+
 </div>
 
----
+<br/>
 
-## 📖 About This Repository
+## 💎 The "10/10 Mastery" Standard
 
-A **personal, handcrafted SQL curriculum** — built from scratch with the goal of mastering SQL from the very basics all the way to advanced production-level concepts. These notes are:
+Regular notes just give you syntax. These notes follow a strict **8-point professional standard** for every single topic:
 
-- ✅ **Beginner-friendly** — plain English, real-world analogies, no unnecessary jargon
-- ✅ **Technically deep** — every topic includes PRO-LEVEL internals (B+ Trees, MVCC, WAL, InnoDB mechanics)
-- ✅ **Comprehensive** — 80+ topics across 16 structured phases covering every major SQL concept
-- ✅ **Practical** — every note has syntax cheat sheets, real-life examples, common mistakes, and 3 practice tasks
-- ✅ **Production-ready** — covers security (PoLP, GRANT/REVOKE), performance (EXPLAIN, indexing), and advanced patterns
-
-> 💡 **Perfect for:** Students starting their SQL journey, developers brushing up on gaps, or anyone who wants solid, reference-quality notes.
-
----
-
-## 🗺️ Curriculum Overview
-
-Start with [`00_SQL_Master_Roadmap.md`](./00_SQL_Master_Roadmap.md) for the full learning path, then follow the 16 phases in order.
-
-| # | Phase | Files | Key Concepts |
-|:--:|-------|:-----:|--------------|
-| 📘 01 | [Database Fundamentals](./Phase_01_Database_Fundamentals/) | 8 | DBMS, RDBMS, File Systems vs DB, DB Architecture, MySQL vs SQL |
-| 📘 02 | [Data Models & Keys](./Phase_02_Data_Models_and_Keys/) | 9 | ER Model, PK, FK, Composite, Surrogate, Alternate, Super Keys |
-| 📘 03 | [SQL Sublanguages & Data Types](./Phase_03_SQL_Sublanguages_and_Data_Types/) | 5 | DDL / DML / DQL / DCL / TCL, Numeric, String, Date, Boolean |
-| 📘 04 | [DDL & Constraints](./Phase_04_DDL_and_Constraints/) | 9 | CREATE, ALTER, DROP, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT |
-| 📘 05 | [DML — Data Manipulation](./Phase_05_DML_Data_Manipulation_Language/) | 5 | INSERT, UPDATE, DELETE, REPLACE, INSERT IGNORE |
-| 📗 06 | [DQL & Basic Filtering](./Phase_06_DQL_and_Basic_Filtering/) | 7 | SELECT, WHERE, DISTINCT, Comparison & Logical Operators |
-| 📗 07 | [Advanced Filtering & Sorting](./Phase_07_Advanced_Filtering_and_Sorting/) | 8 | BETWEEN, IN, IS NULL, LIKE, Wildcards, REGEXP, ORDER BY, LIMIT |
-| 📗 08 | [MySQL Built-in Functions](./Phase_08_MySQL_Built_in_Functions/) | 7 | String, Date, Numeric Functions, CASE, COALESCE |
-| 📗 09 | [Aggregations & Grouping](./Phase_09_Aggregations_and_Grouping/) | 6 | COUNT, SUM, AVG, MIN, MAX, GROUP BY, HAVING, ROLLUP |
-| 📙 10 | [Multi-Table Queries — Joins](./Phase_10_Multi_Table_Queries_Joins/) | 9 | INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF, NATURAL JOIN |
-| 📙 11 | [Set Operations & Subqueries](./Phase_11_Set_Operations_and_Subqueries/) | 10 | UNION, INTERSECT, EXCEPT, Subqueries, EXISTS, ANY / ALL |
-| 📙 12 | [Views & Indexes](./Phase_12_Views_and_Indexes/) | 7 | Views, Updatable Views, Clustered / Secondary / Composite Indexes, EXPLAIN |
-| 📕 13 | [Window Functions](./Phase_13_Window_Functions/) | 8 | OVER, PARTITION BY, ROW_NUMBER, RANK, DENSE_RANK, LEAD, LAG |
-| 📕 14 | [CTEs & Database Programming](./Phase_14_CTEs_and_Database_Programming/) | 8 | CTEs, Recursive CTEs, Stored Procedures, Functions, Triggers, Cursors |
-| 📕 15 | [Transactions, Admin & Security](./Phase_15_Transactions_Admin_Security/) | 7 | ACID, TCL, Locking, Isolation Levels, GRANT / REVOKE, Backup |
-| 📕 16 | [Database Design & Normalization](./Phase_16_Database_Design_Normalization/) | 6 | Anomalies, 1NF → 2NF → 3NF → BCNF, Denormalization |
+1.  **📌 Definition:** Jargon-free explanation in plain English.
+2.  **💡 Why It Exists:** The real-world business problem this concept solves.
+3.  **⚙️ Internal Mechanics (PRO):** How the database engine (InnoDB/MySQL) handles it under the hood (B+ Trees, MVCC, WAL).
+4.  **💻 Syntax Cheat Sheet:** Clean, copy-pasteable SQL examples.
+5.  **🌍 Real-Life Examples:** 2-3 business scenarios (E-commerce, Banking, HR, Social Media).
+6.  **❌ Common Mistakes:** A dedicated section on what beginners (and even seniors) get wrong.
+7.  **✅ Best Practices:** Industry-standard tips for performance and security.
+8.  **🏋️ Practice Tasks:** 3 hands-on tasks per topic to lock in your learning.
 
 ---
 
-## 📂 Repository Structure
+## 🗺️ The 16-Phase Journey
 
-```
-📦 sql-mastery-notes
- ├── 📄 README.md
- ├── 📄 00_SQL_Master_Roadmap.md          ← Start here!
- │
- ├── 📁 Phase_01_Database_Fundamentals/
- │    ├── 01_Data_Information_and_Databases.md
- │    ├── 02_File_Systems_vs_Databases.md
- │    ├── 03_Types_of_Databases.md
- │    ├── 04_Introduction_to_RDBMS.md
- │    └── ... (8 files total)
- │
- ├── 📁 Phase_02_Data_Models_and_Keys/
- ├── 📁 Phase_03_SQL_Sublanguages_and_Data_Types/
- ├── 📁 Phase_04_DDL_and_Constraints/
- ├── 📁 Phase_05_DML_Data_Manipulation_Language/
- ├── 📁 Phase_06_DQL_and_Basic_Filtering/
- ├── 📁 Phase_07_Advanced_Filtering_and_Sorting/
- ├── 📁 Phase_08_MySQL_Built_in_Functions/
- ├── 📁 Phase_09_Aggregations_and_Grouping/
- ├── 📁 Phase_10_Multi_Table_Queries_Joins/
- ├── 📁 Phase_11_Set_Operations_and_Subqueries/
- ├── 📁 Phase_12_Views_and_Indexes/
- ├── 📁 Phase_13_Window_Functions/
- ├── 📁 Phase_14_CTEs_and_Database_Programming/
- ├── 📁 Phase_15_Transactions_Admin_Security/
- └── 📁 Phase_16_Database_Design_Normalization/
-```
+Follow this structured path to transform from a beginner to a database architect.
+
+<details open>
+<summary><strong>📘 Phase 01–05: The Foundation</strong></summary>
+
+*The objective here is to understand 'The Soul' of a database before writing code.*
+
+- **Phase 01:** [Database Fundamentals](./Phase_01_Database_Fundamentals/) — Why we don't use Excel for everything. Understanding DBMS vs. File Systems.
+- **Phase 02:** [Data Models & Keys](./Phase_02_Data_Models_and_Keys/) — Learning the 'Blueprint' (ER Modeling) and how to identify records uniquely.
+- **Phase 03:** [Sublanguages & Data Types](./Phase_03_SQL_Sublanguages_and_Data_Types/) — Organizing your SQL tools (DDL, DML, DQL) and picking the right types for your data.
+- **Phase 04:** [DDL & Constraints](./Phase_04_DDL_and_Constraints/) — Building the skeleton. How to force data integrity with PKs, FKs, and Check constraints.
+- **Phase 05:** [DML — Manipulation](./Phase_05_DML_Data_Manipulation_Language/) — The art of inserting, updating, and deleting data without breaking production.
+
+</details>
+
+<details>
+<summary><strong>📗 Phase 06–09: Querying & Insights</strong></summary>
+
+*Learn to extract raw data and turn it into information.*
+
+- **Phase 06:** [DQL & Basic Filtering](./Phase_06_DQL_and_Basic_Filtering/) — Mastering SELECT. Understanding the **Logical Order of Execution** (FROM → WHERE → SELECT).
+- **Phase 07:** [Advanced Filtering](./Phase_07_Advanced_Filtering_and_Sorting/) — Using REGEXP for pattern matching and LIMIT/OFFSET for high-performance pagination.
+- **Phase 08:** [MySQL Functions](./Phase_08_MySQL_Built_in_Functions/) — Automating data formatting (String, Date, Math) directly in your queries.
+- **Phase 09:** [Aggregations](./Phase_09_Aggregations_and_Grouping/) — Building reports for management using Group By, Having, and Rollups for multi-dimensional analysis.
+
+</details>
+
+<details>
+<summary><strong>📙 Phase 10–12: Intermediate (Scaling Up)</strong></summary>
+
+*Moving from one table to complex, interconnected systems.*
+
+- **Phase 10:** [Multi-Table Joins](./Phase_10_Multi_Table_Queries_Joins/) — The heart of SQL. Mastering Inner, Left, Right, Self, and Cross Joins with Nested-Loop internals.
+- **Phase 11:** [Set Ops & Subqueries](./Phase_11_Set_Operations_and_Subqueries/) — Recursive logic and set theory. Learning when to use `EXISTS` vs `IN` for performance.
+- **Phase 12:** [Views & Indexes](./Phase_12_Views_and_Indexes/) — The "Turbo Button". Understanding B+ Trees and creating safe windows (Views) into your data.
+
+</details>
+
+<details>
+<summary><strong>📕 Phase 13–16: Advanced (Production Engineer)</strong></summary>
+
+*Topics covered by top 1% of SQL developers.*
+
+- **Phase 13:** [Window Functions](./Phase_13_Window_Functions/) — Financial analytics like running totals, row ranking, and week-over-week growth.
+- **Phase 14:** [Database Programming](./Phase_14_CTEs_and_Database_Programming/) — Master CTEs, Stored Procedures, and Triggers to automate complex business logic.
+- **Phase 15:** [Transactions & Security](./Phase_15_Transactions_Admin_Security/) — Ensuring data safety with ACID properties, Locking, and the Principle of Least Privilege.
+- **Phase 16:** [Normalization](./Phase_16_Database_Design_Normalization/) — The science of database design. 1NF to BCNF and when to purposely break the rules (Denormalization).
+
+</details>
 
 ---
 
-## 📚 What Each Note Contains
+## 🛠️ Built With
 
-Every note file follows this consistent, professional structure:
-
-```
-📄 Topic Name
- ├── 📌 Definition            — What is it, in plain English
- ├── 💡 Why It Exists         — The real-world problem it solves
- ├── ⚙️  How It Works (PRO)   — Internal mechanics & performance details
- ├── 💻 Syntax Cheat Sheet    — Full SQL examples ready to use
- ├── 🌍 Real-Life Examples    — 2–3 business scenarios (e-commerce, banking, HR)
- ├── ❌ Common Mistakes        — What beginners (and seniors!) get wrong
- ├── ✅ Best Practices         — Pro tips from industry experience
- └── 🏋️  Practice Tasks        — 3 tasks to test your understanding
-```
+These notes are optimized for **MySQL 8.0+** using the **InnoDB** storage engine. All code examples follow industry-standard SQL linting and are designed for maximum readability.
 
 ---
+
+<br/>
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 1. Prerequisites
+- **MySQL Community Server** (8.0+) — [Download Link](https://dev.mysql.com/downloads/mysql/)
+- **MySQL Workbench** — Recommended GUI for testing the practice tasks.
+- **A Curious Mind** — Every note is designed to be read in 10-15 minutes.
 
-- MySQL 8.0+ — [Download here](https://dev.mysql.com/downloads/mysql/)
-- MySQL Workbench (optional, great for beginners)
-- Any Markdown viewer — GitHub renders these perfectly!
+### 2. How to Clone & Use Locally
+```bash
+# Clone this repository to your computer
+git clone https://github.com/Niranjan-Kumar-Singh/sql-mastery-notes.git
 
-### Recommended Learning Path
-
-| Phases | Focus Area | Timeline |
-|--------|-----------|----------|
-| 01 → 02 → 03 → 04 → 05 | Foundation — Databases, Keys, DDL, DML | Weeks 1–2 |
-| 06 → 07 → 08 → 09 | Querying — SELECT, Filtering, Functions, Aggregations | Weeks 3–4 |
-| 10 → 11 → 12 | Intermediate — Joins, Subqueries, Views, Indexes | Weeks 5–6 |
-| 13 → 14 → 15 → 16 | Advanced — Window Functions, CTEs, Transactions, Normalization | Weeks 7–8 |
-
-> 💡 **Tip:** Don't just read — open MySQL Workbench alongside and run every code example as you go!
+# Navigate into the folder
+cd sql-mastery-notes
+```
 
 ---
 
-## 🎯 Topics Covered At a Glance
+## 🤝 Found a Mistake? (How to Contribute)
 
-<details>
-<summary><strong>📘 Foundation Phases (01–05)</strong></summary>
+I aim for 100% technical accuracy, but if you find a typo, a bug in the SQL code, or want to suggest a new "Pro-Level" section, follow these steps to contribute:
 
-- What is Data, Information, Database, and DBMS?
-- Why Relational Databases beat File Systems
-- ER Model — Entities, Attributes, Relationships, Cardinality
-- All Key types — Primary, Foreign, Composite, Surrogate, Alternate, Super, Unique
-- SQL vs MySQL — the language vs the tool
-- All MySQL Data Types — INT, DECIMAL, VARCHAR, TEXT, DATE, TIMESTAMP, BOOLEAN
-- DDL — CREATE TABLE, ALTER TABLE, DROP TABLE, TRUNCATE
-- DML — INSERT (single/bulk), UPDATE, DELETE, REPLACE, INSERT IGNORE
-- All Constraints — PRIMARY KEY, FOREIGN KEY, UNIQUE, NOT NULL, CHECK, DEFAULT
+### 1. Fork the Repository
+Click the **Fork** button at the top-right of this page to create a copy of this repository under your own GitHub account.
 
-</details>
+### 2. Clone Your Fork
+Open your terminal and clone **your specific fork** (replace `YOUR-USERNAME` with your actual GitHub username):
+```bash
+git clone https://github.com/YOUR-USERNAME/sql-mastery-notes.git
+cd sql-mastery-notes
+```
 
-<details>
-<summary><strong>📗 Querying Phases (06–09)</strong></summary>
+### 3. Create a New Branch
+Always create a separate branch for your fixes:
+```bash
+git checkout -b fix/topic-name
+```
 
-- SELECT statement and the full query execution order
-- WHERE, DISTINCT, comparison operators, logical operators (AND / OR / NOT)
-- LIKE, Wildcards (`%`, `_`), REGEXP / RLIKE patterns
-- BETWEEN, IN, IS NULL / IS NOT NULL
-- ORDER BY (single/multi-column), LIMIT, OFFSET, keyset pagination
-- String functions: CONCAT, LENGTH, SUBSTRING, UPPER, LOWER, TRIM, REPLACE
-- Date functions: NOW(), CURDATE(), DATEDIFF(), DATE_FORMAT(), TIMESTAMPDIFF()
-- Numeric functions: ROUND, CEIL, FLOOR, ABS, MOD
-- Aggregate functions: COUNT, SUM, AVG, MIN, MAX
-- GROUP BY, HAVING, WITH ROLLUP (multidimensional aggregates)
+### 4. Make Your Changes & Commit
+After fixing the mistake, commit your changes with a clear message:
+```bash
+git add .
+git commit -m "Fix: Corrected typo in Topic 10.2 (Joins)"
+```
 
-</details>
+### 5. Push & Submit a Pull Request
+Push the changes to your fork and then click the **"Compare & pull request"** button on the original repository page.
+```bash
+git push origin fix/topic-name
+```
 
-<details>
-<summary><strong>📙 Intermediate Phases (10–12)</strong></summary>
-
-- All 7 JOIN types with internals, real examples, and performance notes
-- UNION, UNION ALL, INTERSECT, EXCEPT — set theory in SQL
-- Subqueries in WHERE, SELECT, FROM clauses
-- Correlated Subqueries — and their O(N²) performance danger
-- EXISTS and NOT EXISTS — and the critical NULL trap with NOT IN
-- Views — creating, OR REPLACE, WITH CHECK OPTION, security masking
-- Indexes — B+ Tree, Clustered, Secondary, Composite, Full-Text
-- EXPLAIN — reading query execution plans for performance tuning
-
-</details>
-
-<details>
-<summary><strong>📕 Advanced Phases (13–16)</strong></summary>
-
-- Window Functions — OVER(), PARTITION BY, all ranking/value/aggregate functions
-- LEAD / LAG for time-series and sequential row comparison
-- CTEs — simple, chained, and recursive (hierarchical data)
-- Stored Procedures — IN / OUT / INOUT parameters, DELIMITER, execution plan cache
-- User-Defined Functions (UDFs), Triggers, Cursors
-- Error Handling — DECLARE HANDLER, transaction rollback patterns
-- ACID Properties and the Redo / Undo Log system
-- Transaction Isolation Levels — Dirty Reads, Non-Repeatable Reads, Phantoms, MVCC
-- Row-Level Locking, Shared vs Exclusive Locks, Deadlocks, FOR UPDATE
-- GRANT / REVOKE — Principle of Least Privilege, column-level access
-- User Management — host-restricted accounts, authentication
-- mysqldump Backup & Restore — full cheat sheet, binary log recovery, 3-2-1 rule
-- Normalization — 1NF → 2NF → 3NF → BCNF with real examples
-- Denormalization and real-world performance trade-offs
-
-</details>
+*Your contribution will help this resource remain the best free SQL guide on the internet!*
 
 ---
 
-## 🛠️ Tools & Technologies
-
-| Tool | Version | Purpose |
-|------|---------|---------|
-| **MySQL** | 8.0+ | The SQL database engine used for all examples |
-| **MySQL Workbench** | Latest | GUI for running queries and designing schemas |
-| **InnoDB** | Default | ACID-compliant storage engine |
-| **Markdown** | GFM | All notes written in GitHub-flavored Markdown |
-
----
-
-## 📈 Progress Tracker
-
-Track your learning as you go — check off each phase when you complete it:
-
-- [ ] Phase 01 — Database Fundamentals
-- [ ] Phase 02 — Data Models & Keys
-- [ ] Phase 03 — SQL Sublanguages & Data Types
-- [ ] Phase 04 — DDL & Constraints
-- [ ] Phase 05 — DML
-- [ ] Phase 06 — DQL & Basic Filtering
-- [ ] Phase 07 — Advanced Filtering & Sorting
-- [ ] Phase 08 — MySQL Built-in Functions
-- [ ] Phase 09 — Aggregations & Grouping
-- [ ] Phase 10 — Multi-Table Queries (Joins)
-- [ ] Phase 11 — Set Operations & Subqueries
-- [ ] Phase 12 — Views & Indexes
-- [ ] Phase 13 — Window Functions
-- [ ] Phase 14 — CTEs & Database Programming
-- [ ] Phase 15 — Transactions, Admin & Security
-- [ ] Phase 16 — Database Design & Normalization
-
----
-
-## 🤝 Contributing
-
-Found a mistake or want to improve a note? Contributions are welcome!
-
-1. Fork this repository
-2. Create a branch: `git checkout -b fix/topic-name`
-3. Make your changes with clear explanations
-4. Submit a Pull Request describing what you changed and why
-
----
-
-## 📄 License
-
-Licensed under the **MIT License** — feel free to use, share, and build upon these notes for personal or educational purposes. A credit back to this repo is appreciated! 🙏
-
----
-
-## 👤 Author
+<br/>
 
 <div align="center">
 
-### Niranjan Kumar Singh
+## 👤 Meet the Author
 
-*Passionate about learning databases, backend development, and building things that matter.*
+### **Niranjan Kumar Singh**
+*Data Enthusiast • Backend Developer • Master Learner*
 
 <br/>
 
@@ -267,14 +181,8 @@ Licensed under the **MIT License** — feel free to use, share, and build upon t
 *"The best way to learn SQL is to write SQL.*
 *Open Workbench. Run the code. Break things. Fix them."*
 
-</div>
-
----
-
-<div align="center">
+<br/>
 
 ⭐ **If these notes helped you, please star this repository!** ⭐
-
-*It helps others discover this resource and motivates continued improvements.*
 
 </div>

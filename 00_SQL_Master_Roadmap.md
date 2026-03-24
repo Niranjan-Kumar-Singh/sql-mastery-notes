@@ -15,15 +15,15 @@ Welcome to your ultimate journey from absolute beginner to SQL Master! This comp
 
 ## Phase 2: Data Models & Types of Keys (The Backbone of DBs)
 *Objective: Learn how tables relate to each other and how we uniquely identify data.*
-- **Topic 2.1:** Entity-Relationship (ER) Model Basics (Entities, Attributes)
-- **Topic 2.2:** What are Keys in DBMS? (Why they are strictly necessary)
-- **Topic 2.3:** Super Key
-- **Topic 2.4:** Candidate Key
-- **Topic 2.5:** Primary Key
-- **Topic 2.6:** Foreign Key
-- **Topic 2.7:** Alternate Key
-- **Topic 2.8:** Composite Key
-- **Topic 2.9:** Surrogate Key vs. Natural Key
+- **Topic 2.1:** Entity-Relationship (ER) Model and Basics
+- **Topic 2.2:** Entities, Attributes, and Relationships
+- **Topic 2.3:** Primary Key and Candidate Key
+- **Topic 2.4:** Foreign Key (The Anchor of Relationships)
+- **Topic 2.5:** Unique Key vs. Primary Key
+- **Topic 2.6:** Composite Key (Multi-column Identity)
+- **Topic 2.7:** Surrogate Key vs. Natural Key
+- **Topic 2.8:** Alternate Key
+- **Topic 2.9:** Super Key
 
 ## Phase 3: Core SQL Sublanguages & Data Types
 *Objective: Learn the syntax categorization and how to correctly type your data.*
